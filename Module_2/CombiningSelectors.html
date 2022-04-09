@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combining Selectors</title>
+    <style>
+        
+        /*Element with class */
+        p.big{
+            color: yellow;
+            font-size: 30px;
+        }
+        /*Child selector*/
+        article>p{
+            color: green;
+            font-size: larger;
+        }
+        /*Descendant selector*/
+        article p{
+            color:brown;
+        }
+        .highlight{
+            background-color: green;
+        }
+        .mainpoint{
+            font-style: italic;
+        }
+        p.highlight{
+            color: orange;
+        }
+        .highlight.mainpoint{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight">This text is an example of p.highlight it will be printed orange</p>
+    <div class="highlight">This text is an example of highlight it will be printed green</div>
+    <p class="mainpoint">This text is an example of .mainpoint it will be printed in italic font</p>
+    <div class="mainpoint highlight">This text is an example of .mainpoint.highlight it will be printed orange</div>
+    <p class="highlight mainpoint">Tsting if the property of p.highlight crashes with that of .mainpoint.highlight</p>
+    <p class="highlight">Tsting if the property of p.highlight crashes with that of .mainpoint.highlight</p>
+
+
+    <p class="big">This text is a part of combined Selectors </p>
+  <div>This is text is an example of wanna be combined selectors</div>
+  <h1>If you want to see how child selector works comment out the Descendant selector</h1>
+  <article>
+      <p>This text is a direct child</p>
+  </article>
+  
+      <div>just to create some gap between the child and parent</div>
+      <p>Is this still a child elemnt ?No becoz it is orphan </p>
+  
+  <article>
+      <div>
+          <p>there is another elemnt between these 2 is this still a direct child</p>
+      </div>
+  </article>
+
+</body>
+</html>
