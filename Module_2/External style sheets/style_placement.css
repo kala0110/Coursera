@@ -1,0 +1,17 @@
+.centered{
+    text-align: center;
+}
+.inright{
+    text-align: right;
+}
+.inleft{
+    text-align: left;
+}
+.highlight{
+    background-color:black;
+    color: red;
+}
+h2{
+    color: maroon;
+
+}
