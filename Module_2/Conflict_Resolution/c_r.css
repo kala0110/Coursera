@@ -1,9 +1,13 @@
 p{
-    
+    color: green;
     text-align: center;
 }
 body{
     color: red;
     text-align: left;
     font-size: larger;
+}
+#important{
+
+    color: blue !important;
 }
