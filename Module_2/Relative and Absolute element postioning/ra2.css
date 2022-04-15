@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    margin-bottom: 15px;
+}
+div#container {
+    background-color: blue;
+    
+}
+p{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+#p1{
+    background-color: red;
+    position: relative;
+    top: 65px;
+    left: 65px;
+
+}
+#p2{
+    background-color: pink;
+}
+#p3{
+    background-color: white;
+    
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+#p4{
+    background-color:green;
+}
+
