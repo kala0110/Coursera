@@ -1,0 +1,50 @@
+/* syntax
+
+1. And operator
+   @media (min-width:700px) and (max-width:900px) {
+       .....condition....
+   }
+
+2. Or operator
+   @media (min-width:700px) , (max-width:900px){
+       .....condition....
+   } */
+
+h1{
+    margin-bottom: 15px;
+}
+p{
+    border: 1px solid black;
+}
+#p1{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+#p2{
+    background-color:green;
+    width: 50px;
+    height: 50px;
+}
+/* ***************large devices only******************* */
+@media (min-width: 1200px) {
+    #p1{
+        width: 80%;
+    }
+    #p2{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    #p1{
+        width: 50%;
+           
+    }
+    #p2{
+        width: 100px;
+        height: 100px;
+
+    }
+}
